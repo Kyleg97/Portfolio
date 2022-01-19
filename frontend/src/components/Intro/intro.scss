@@ -1,0 +1,30 @@
+.intro {
+    background-color: white;
+    display: flex;
+
+    .left {
+        flex: 1;
+        overflow: hidden;
+
+        .imgContainer {
+            width: 1000px;
+            height: 1000px;
+            background-color: crimson;
+            border-radius: 100%;
+
+            .img {
+                height: 90%;
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+  .navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    //display: flex;
+    z-index: 2;
+    overflow-y: hidden;
+
+    .wrapper {
+      padding: 0px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        flex: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .logo {
+          font-size: 30px;
+          font-weight: 500;
+          text-decoration: none;
+          color: inherit;
+          margin-right: 40px;
+        }
+
+        .logo:hover {
+          color: darkcyan;
+          background-color: transparent;
+        }
+      }
+
+      .right {
+        flex: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 20px;
+      }
+    }
+  }
+  
+   /* Style all font awesome icons */
+   .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px;
+  } 
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.8;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-github {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  } 
