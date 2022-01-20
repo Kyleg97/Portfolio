@@ -6,8 +6,9 @@ function Navbar() {
             <div className='wrapper'>
                 <div className='left'>
                     <a href='#intro' className='logo'>hello</a>
-                    <a href='#portfolio' className='logo'>portfolio</a>
+                    <a href='#experience' className='logo'>experience</a>
                     <a href='#photography' className='logo'>photography</a>
+                    <a href='#portfolio' className='logo'>portfolio</a>
                     <a href='#contact' className='logo'>contact</a>
                 </div>
                 <div className='right'>

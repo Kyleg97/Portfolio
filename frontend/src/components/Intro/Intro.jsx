@@ -5,14 +5,14 @@ export default function Intro() {
         <div className='intro' id='intro'>
             <div className='left'>
                 <div className='imgContainer'>
-                    <img src='assets/me.png' alt=''/>
+                    <img src='assets/me.png' alt='assets/photography/esther.png'/>
                 </div>
             </div>
             <div className='right'>
                 <div className='wrapper'>
-                    <h2>Seasons Greetings, I'm</h2>
                     <h1>Kyle Gilbert</h1>
-                    <h3></h3>
+                    <h3>Undergraduate computer science student with</h3>
+                    <h3>an expected graduation of Spring 2022.</h3>
                 </div>
             </div>
         </div>
