@@ -30,8 +30,12 @@
         }
 
         .logo:hover {
-          color: darkcyan;
+          color: lightseagreen;
           background-color: transparent;
+        }
+
+        .logo:active {
+          color: lightseagreen;
         }
       }
 

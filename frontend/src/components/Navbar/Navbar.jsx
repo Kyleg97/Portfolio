@@ -5,11 +5,11 @@ function Navbar() {
         <div className='navbar'>
             <div className='wrapper'>
                 <div className='left'>
-                    <a href='#intro' className='logo'>hello</a>
-                    <a href='#experience' className='logo'>experience</a>
-                    <a href='#photography' className='logo'>photography</a>
-                    <a href='#portfolio' className='logo'>portfolio</a>
-                    <a href='#contact' className='logo'>contact</a>
+                    <a href='#intro' className='logo' onClick={printHref}>hello</a>
+                    <a href='#experience' className='logo' onClick={printHref}>experience</a>
+                    <a href='#photography' className='logo' onClick={printHref}>photography</a>
+                    <a href='#portfolio' className='logo' onClick={printHref}>portfolio</a>
+                    <a href='#contact' className='logo' onClick={printHref}>contact</a>
                 </div>
                 <div className='right'>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -19,6 +19,10 @@ function Navbar() {
             </div>
         </div>
     );
+}
+
+function printHref() {
+    console.log("Page is " + window.location.href);
 }
 
 function oldNavbar() {

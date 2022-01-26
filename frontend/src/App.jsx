@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact'
 import './app.scss';
 
 function App() {
+  console.log("Page is " + window.location.href);
   return (
     <div className='app'>
       <Navbar/>

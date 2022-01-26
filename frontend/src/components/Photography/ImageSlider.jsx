@@ -1,7 +1,8 @@
 import React, { useState, Component } from 'react';
 import { SliderData } from './SliderData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import './imageslider.scss';
+import '@splidejs/splide';
 
 export default function ImageSlider({ slides }) {
     const [current, setCurrent] = useState(0);
@@ -23,16 +24,25 @@ export default function ImageSlider({ slides }) {
 
     return <div>
         <section className='slider'>
-            <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
-            <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+            <FaAngleLeft className='left-arrow' onClick={prevSlide} />
+            <FaAngleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-                        {index === current && (<img src={slide.image} alt='image' className='image' />)}
+                        {index === current && (<img src={slide.image} alt={slide.prevImage} className='image' />)}
                     </div>
                 )
             })}
         </section>
+        <div className='info'>
+            {SliderData.map((slide, index) => {
+                return (
+                    <div key={index}>
+                        {index === current && (<h3 className='location'>{slide.location}</h3>)}
+                    </div>
+                )
+            })}
+        </div>
     </div>;
 }
 

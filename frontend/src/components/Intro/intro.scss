@@ -9,7 +9,7 @@
         .imgContainer {
             width: 850px;
             height: 850px;
-            background-color: lightblue;
+            background-color: lightseagreen;
             border-radius: 100%;
             display: flex;
             align-items: flex-end;
@@ -17,9 +17,9 @@
             float: right;
 
             .img {
-                height: 90%;
-                width: 500px;
-                height: 500px;
+                height: 50%;
+                width: 400px;
+                height: 400px;
             }
         }
     }
