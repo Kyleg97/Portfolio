@@ -1,5 +1,5 @@
 import ImageSlider from './ImageSlider';
-import { SliderData } from './PhotoSliderData';
+import { SliderData } from './ImageSliderData';
 import './photography.scss';
 
 export default function Photography() {

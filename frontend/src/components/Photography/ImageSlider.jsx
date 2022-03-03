@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import { SliderData } from './PhotoSliderData';
+import { SliderData } from './ImageSliderData';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import './imageslider.scss';
 
@@ -23,12 +23,12 @@ export default function ImageSlider({ slides }) {
 
     return <div>
         <section className='slider'>
-            <FaAngleLeft className='left-arrow' onClick={prevSlide} />
+            <FaAngleLeft className='left-arrow' black onClick={prevSlide}/>
             <FaAngleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-                        {index === current && (<img src={slide.image} alt={slide.prevImage} className='image' />)}
+                        {index === current && (<img src={slide.image} alt='image' className='image' />)}
                     </div>
                 )
             })}
@@ -39,7 +39,7 @@ export default function ImageSlider({ slides }) {
                     <div key={index}>
                         {index === current && (<h3 className='location'>{slide.location}</h3>)}
                     </div>
-                )
+                );
             })}
         </div>
     </div>;

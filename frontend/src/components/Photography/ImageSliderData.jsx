@@ -1,6 +1,6 @@
 export const SliderData = [
     {
-        image: 'assets/photography/img1.png',
+        image: 'https://drive.google.com/uc?export=view&id=1-F6kpPqdZXDRO8uqWhY9W7j7TkmqhEJR',
         location: 'Big Sur, California'
     },
     {
