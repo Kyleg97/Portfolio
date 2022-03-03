@@ -8,6 +8,7 @@ function Navbar() {
                     <a href='#intro' className='logo' onClick={printHref}>hello</a>
                     <a href='#experience' className='logo' onClick={printHref}>experience</a>
                     <a href='#photography' className='logo' onClick={printHref}>photography</a>
+                    <a href='#videography' className='logo' onClick={printHref}>videography</a>
                     <a href='#portfolio' className='logo' onClick={printHref}>portfolio</a>
                     <a href='#contact' className='logo' onClick={printHref}>contact</a>
                 </div>

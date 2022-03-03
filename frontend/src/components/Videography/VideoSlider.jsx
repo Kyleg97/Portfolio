@@ -1,9 +1,10 @@
 import React, { useState, Component } from 'react';
-import { SliderData } from './PhotoSliderData';
+import { SliderData } from './VideoSliderData';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import './imageslider.scss';
+import ReactPlayer from 'react-player';
+import './videoslider.scss';
 
-export default function ImageSlider({ slides }) {
+export default function VideoSlider({ slides }) {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
 
@@ -28,7 +29,7 @@ export default function ImageSlider({ slides }) {
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-                        {index === current && (<img src={slide.image} alt={slide.prevImage} className='image' />)}
+                        {index === current && (<ReactPlayer url={slide.video}/>)}
                     </div>
                 )
             })}

@@ -6,6 +6,7 @@ import Photography from './components/Photography/Photography';
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import './app.scss';
+import Videography from './components/Videography/Videography';
 
 function App() {
   console.log("Page is " + window.location.href);
@@ -16,6 +17,7 @@ function App() {
         <Intro/>
         <Experience/>
         <Photography/>
+        <Videography/>
         <Portfolio/>
         <Contact/>
       </div>
